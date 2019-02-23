@@ -1,0 +1,18 @@
+Donalt_positive=format(len(pos_tweets)*100/len(data['Tweets']))
+Donalt_neutral=format(len(neu_tweets)*100/len(data['Tweets']))
+Donalt_negative=format(len(neg_tweets)*100/len(data['Tweets']))
+Vladimir_positive=format(len(pos_tweets)*100/len(data['Tweets']))
+Vladimir_neutral=format(len(neu_tweets)*100/len(data['Tweets']))
+Vladimir_negative=format(len(neg_tweets)*100/len(data['Tweets']))
+if ( Donalt_positive > Vladimir_positive ):
+   print("Donalt_Trump has more positive tweets")  
+else:
+   print("Vladimir_Putin has more positive tweets") 
+if ( Donalt_negative > Vladimir_negative ):
+   print("Donalt_Trump has more negative tweets")  
+else:
+   print("Vladimir_Putin has more negative tweets")
+if ( Donalt_neutral > Vladimir_neutral ):
+   print("Donalt_Trump has more neutral tweets")  
+else:
+   print("Vladimir_Putin has more neutral tweets")
