@@ -23,7 +23,7 @@ def twitter_setup():
     api = tweepy.API(auth)
     return api
 extractor = twitter_setup()
-tweets = extractor.user_timeline(screen_name="realDonaldTrump", count=1000)
+tweets = extractor.user_timeline(screen_name="realDonaldTrump", count=200)
 print("Number of tweets extracted: {}.\n".format(len(tweets)))
 print("4 recent tweets of Donald Trump:\n")
 for tweet in tweets[:4]:
